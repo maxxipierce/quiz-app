@@ -11,59 +11,52 @@
 
 </head>
 
-<!-- Loading Page -->
-
 <body>
-
-</body>
-
-<!-- Content Page -->
-
-<body>
-
   <header role="banner">
     <!-- Logo + Minecraft Quiz -->
     <div class="banner">
-      <div class="bannerWrapper">
-        <img src="" class="logo" alt="minecraft block image">
+      <div class="container">
+        <img src="" class="logo" alt="minecraft block logo">
         <h1 class="title">Minecraft Quiz</h1>
       </div>
     </div>
-
   </header>
 
   <main>
-    <section class="contentWrapper">
+    <section class="container">
       <header>
         <!-- Question -->
         <h2 class="question">Question #1</h2>
       </header>
 
-      <form class="answerForm" action="/" method="post">
+      <form class="answer-form" action="/" method="post">
         <!-- Answers -->
-        <ul class="answerOptions">
+        <ul class="answer-options">
           <li>Answer 1</li>
           <li>Answer 2</li>
           <li>Answer 3</li>
           <li>Answer 4</li>
         </ul>
         <!-- Submit button -->
-        <button type="button">Submit</button>
+        <button type="button" class="submit-button">Submit</button>
       </form>
     </section>
+  </main>
 
-    <footer>
-      <!-- Question # / Score -->
-      <div class="footerWrapper">
-        <div class="qTotal">
-          <p>Question: <span class="qNumber">1</span>/10</p>
+  <footer>
+    <!-- Question # / Score -->
+    <div class="container">
+      <div class="footer-wrapper">
+        <div class="q-total">
+          <p>Question: <span class="q-number">1</span>/10</p>
         </div>
-        <div class="scoreTotal">
-          <p>Score: <span class="scoreNumber">0</span>/10</p>
+        <div class="score-total">
+          <p>Score: <span class="score-number">0</span>/10</p>
         </div>
       </div>
-    </footer>
-  </main>
+    </div>
+  </footer>
+
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
   <script src="main.js"></script>
 </body>

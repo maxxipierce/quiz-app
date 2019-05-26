@@ -1,4 +1,5 @@
-*, body {
+*,
+body {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -18,38 +19,9 @@ li {
 .banner .logo {
   width: 100px;
   height: 100px;
-  background-color: black;
+  background-color: white;
   display: block;
   margin: 0 auto;
-
-}
-
-.banner .title {
-  text-align: center;
-  padding-top: 25px;
-}
-
-/* All other screens */
-/* Banner */
-@media screen and (min-width: 520px) {
-.banner {
-  background-color: #dcdddc;
-  height: 100px;
-  margin: 0;
-}
-
-.banner .bannerWrapper,
-.contentWrapper,
-.footerWrapper {
-  width: 800px;
-  margin: 0 auto;
-}
-
-.banner .logo {
-  width: 100px;
-  height: 100px;
-  background-color: black;
-  float: left;
 }
 
 .banner .title {
@@ -58,50 +30,65 @@ li {
 }
 
 /* Question + Answers */
-.contentWrapper .question {
- background-color: #f2f2f2;
+.container .question {
+  background-color: #f2f2f2;
 }
 
 .question,
-.answerOptions,
-button {
+.answer-options {
   text-align: center;
   padding: 10px;
 }
 
-.answerForm {
+.answer-form {
   height: 400px;
   padding-top: 50px;
 }
 
-.answerForm,
-.answerOptions {
+.answer-form,
+.answer-options {
   background-color: #dcdddc;
-
 }
 
-.answerForm button {
+.answer-form .submit-button {
   display: block;
   margin: 0 auto;
+  padding: 10px;
 }
 
 /* Footer */
-.footerWrapper {
+.footer-wrapper {
   background-color: #f2f2f2;
   padding: 10px;
 }
 
-
-.footerWrapper::after {
+.footer-wrapper::after {
   clear: both;
   content: "";
   display: table;
 }
 
-.qTotal{
+.q-total{
   float: left;
 }
 
-.scoreTotal {
+.score-total {
   float: right;
+}
+
+
+/* All other screens */
+/* Banner */
+@media screen and (min-width: 799px) {
+.banner {
+  height: 100px;
+}
+
+.container {
+  width: 800px;
+  margin: 0 auto;
+}
+
+.banner .logo {
+  float: left;
 }

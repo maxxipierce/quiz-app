@@ -1,3 +1,107 @@
 *, body {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+/* Cellphone screens */
+.banner {
+  background-color: #dcdddc;
+  height: 200px;
+  margin: 0;
+}
+
+.banner .logo {
+  width: 100px;
+  height: 100px;
+  background-color: black;
+  display: block;
+  margin: 0 auto;
+
+}
+
+.banner .title {
+  text-align: center;
+  padding-top: 25px;
+}
+
+/* All other screens */
+/* Banner */
+@media screen and (min-width: 520px) {
+.banner {
+  background-color: #dcdddc;
+  height: 100px;
+  margin: 0;
+}
+
+.banner .bannerWrapper,
+.contentWrapper,
+.footerWrapper {
+  width: 800px;
+  margin: 0 auto;
+}
+
+.banner .logo {
+  width: 100px;
+  height: 100px;
+  background-color: black;
+  float: left;
+}
+
+.banner .title {
+  text-align: center;
+  padding-top: 25px;
+}
+
+/* Question + Answers */
+.contentWrapper .question {
+ background-color: #f2f2f2;
+}
+
+.question,
+.answerOptions,
+button {
+  text-align: center;
+  padding: 10px;
+}
+
+.answerForm {
+  height: 400px;
+  padding-top: 50px;
+}
+
+.answerForm,
+.answerOptions {
+  background-color: #dcdddc;
+
+}
+
+.answerForm button {
+  display: block;
+  margin: 0 auto;
+}
+
+/* Footer */
+.footerWrapper {
+  background-color: #f2f2f2;
+  padding: 10px;
+}
+
+
+.footerWrapper::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.qTotal{
+  float: left;
+}
+
+.scoreTotal {
+  float: right;
 }

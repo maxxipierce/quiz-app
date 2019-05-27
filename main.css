@@ -33,7 +33,6 @@ body {
   padding: 10px;
 }
 
-
 /* Content Page */
 li {
   list-style: none;
@@ -98,7 +97,7 @@ li {
   display: table;
 }
 
-.q-total{
+.q-total {
   float: left;
 }
 
@@ -109,16 +108,16 @@ li {
 /* All other screens */
 /* Banner Changes */
 @media screen and (min-width: 799px) {
-.banner {
-  height: 100px;
-}
+  .banner {
+    height: 100px;
+  }
 
-.container {
-  width: 800px;
-  margin: 0 auto;
-}
+  .container {
+    width: 800px;
+    margin: 0 auto;
+  }
 
-.banner .logo {
-  float: left;
+  .banner .logo {
+    float: left;
+  }
 }
-

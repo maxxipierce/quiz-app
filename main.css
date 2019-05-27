@@ -5,6 +5,36 @@ body {
   padding: 0;
 }
 
+/* Landing Page */
+.continue-form {
+  display: flex;
+  margin-top: 200px;
+  justify-content: center;
+}
+
+.center {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.continue-button {
+  padding: 10px;
+}
+
+/* Correct Page */
+.in-correct-text,
+.score-complete {
+  display: block;
+  padding: 0 30px 30px;
+}
+
+/* Incorrect Page */
+.correct-answer {
+  padding: 10px;
+}
+
+
+/* Content Page */
 li {
   list-style: none;
 }
@@ -76,9 +106,8 @@ li {
   float: right;
 }
 
-
 /* All other screens */
-/* Banner */
+/* Banner Changes */
 @media screen and (min-width: 799px) {
 .banner {
   height: 100px;
@@ -92,3 +121,4 @@ li {
 .banner .logo {
   float: left;
 }
+

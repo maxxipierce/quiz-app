@@ -5,10 +5,14 @@ body {
   padding: 0;
 }
 
+.hide-view {
+  display: none;
+}
+
 /* Landing Page */
 .continue-form {
   display: flex;
-  margin-top: 200px;
+  margin-top: 100px;
   justify-content: center;
 }
 
@@ -18,7 +22,23 @@ body {
 }
 
 .continue-button {
-  padding: 10px;
+  padding: 30px;
+  font-family: "Notable", sans-serif;
+  font-size: 20px;
+  border-radius: 2px;
+}
+
+.minecraft-font {
+  font-family: "Press Start 2P", cursive;
+}
+
+.bulky-font {
+  font-family: "Notable", sans-serif;
+}
+
+.text-el {
+  text-align: center;
+  padding-top: 25px;
 }
 
 /* Correct Page */
@@ -31,6 +51,8 @@ body {
 /* Incorrect Page */
 .correct-answer {
   padding: 10px;
+  margin-bottom: 30px;
+  font-family: "Press Start 2P", cursive;
 }
 
 /* Content Page */
@@ -40,27 +62,34 @@ li {
 
 /* Cellphone screens */
 .banner {
-  background-color: #dcdddc;
+  background: rgb(242, 242, 242);
+  background: linear-gradient(
+    0deg,
+    rgba(242, 242, 242, 1) 0%,
+    rgba(117, 121, 121, 0.34217436974789917) 100%
+  );
+  /* background-color: #dcdddc; */
   height: 200px;
   margin: 0;
 }
 
 .banner .logo {
   width: 100px;
-  height: 100px;
   background-color: white;
   display: block;
   margin: 0 auto;
+  border-radius: 2px;
 }
 
 .banner .title {
   text-align: center;
-  padding-top: 25px;
+  font-size: 40px;
+  padding-top: 10px;
 }
 
 /* Question + Answers */
 .container .question {
-  background-color: #f2f2f2;
+  font-size: 25px;
 }
 
 .question,
@@ -76,19 +105,25 @@ li {
 
 .answer-form,
 .answer-options {
-  background-color: #dcdddc;
+  font-size: 50px;
 }
 
 .answer-form .submit-button {
   display: block;
-  margin: 0 auto;
-  padding: 10px;
+  margin: 50px auto;
+  padding: 30px;
+  font-family: "Notable", sans-serif;
+  font-size: 20px;
+  border-radius: 2px;
 }
 
 /* Footer */
 .footer-wrapper {
   background-color: #f2f2f2;
-  padding: 10px;
+  padding: 20px;
+  position: fixed;
+  bottom: 0px;
+  width: 800px;
 }
 
 .footer-wrapper::after {
@@ -99,10 +134,12 @@ li {
 
 .q-total {
   float: left;
+  font-size: 30px;
 }
 
 .score-total {
   float: right;
+  font-size: 30px;
 }
 
 /* All other screens */
@@ -110,6 +147,7 @@ li {
 @media screen and (min-width: 799px) {
   .banner {
     height: 100px;
+    padding-top: 15px;
   }
 
   .container {

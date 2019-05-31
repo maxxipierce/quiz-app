@@ -33,12 +33,12 @@
 - South
 - West
 
-## 4 What color is the music disc “ward”?
+## 4 One way to deal damage to mobs is using gravity. Which of these mobs cannot be hurt by falling?
 
-- Green
-- Orange
-- Blue
-- Red
+- Iron golem
+- Silverfish
+- Witch
+- Wolf
 
 ## 5 When silverfish hide in a stone block, the block becomes infested. How many types of blocks can silverfish infest?
 
@@ -47,12 +47,12 @@
 - 4
 - 8
 
-## 6 What specific ingredient is required for a burst firework?
+## 6 Of all the ores, Emerald Ore is the rarest mineral block in the game. It only naturally generates in which biome?
 
-- Feather
-- Diamond
-- Glowstone Dust
-- Gold Nugget
+- Extreme hills
+- Forest
+- Jungle
+- Taiga
 
 ## 7 What is the minimum amount of bookshelves required for a level 30 enchantment?
 
@@ -61,12 +61,12 @@
 - 8
 - 18
 
-## 8 Note blocks create different sounds based on what block you place them on. Which block would cause a note block to use the flute sound?
+## 8 In a standard game of Minecraft, which of these enemies will deal the most damage to the player per hit?
 
-- Clay
-- Packed ice
-- Gold block
-- Bone block
+- Zombie Pigman
+- Wither
+- Enderman
+- Blaze
 
 ## 9 What year was Minecraft initially released?
 
@@ -79,5 +79,5 @@
 
 - Sleep in a bed
 - Grow a tree
-- Find overworld mobs
+- Place bookshelves
 - Light a fire

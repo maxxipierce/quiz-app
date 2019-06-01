@@ -106,7 +106,6 @@ function renderLandingPage() {
 
 function renderQuestionPage(index, score) {
   if (index >= STORE.length) {
-    // if (index >= 2) {
     renderCompletePage(score);
     return
   }

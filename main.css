@@ -3,6 +3,7 @@ body {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: "Press Start 2P", cursive;
 }
 
 .hide-view {
@@ -23,17 +24,8 @@ body {
 
 .continue-button {
   padding: 30px;
-  font-family: "Notable", sans-serif;
   font-size: 20px;
   border-radius: 2px;
-}
-
-.minecraft-font {
-  font-family: "Press Start 2P", cursive;
-}
-
-.bulky-font {
-  font-family: "Notable", sans-serif;
 }
 
 .text-el {
@@ -52,7 +44,6 @@ body {
 .correct-answer {
   padding: 10px;
   margin-bottom: 30px;
-  font-family: "Press Start 2P", cursive;
 }
 
 /* Content Page */
@@ -95,7 +86,7 @@ li {
 .question,
 .answer-options {
   text-align: center;
-  padding: 10px;
+  padding: 20px;
 }
 
 .answer-form {
@@ -105,14 +96,14 @@ li {
 
 .answer-form,
 .answer-options {
-  font-size: 50px;
+  font-size: 30px;
 }
 
 .answer-form .submit-button {
   display: block;
   margin: 50px auto;
   padding: 30px;
-  font-family: "Notable", sans-serif;
+
   font-size: 20px;
   border-radius: 2px;
 }
@@ -134,12 +125,12 @@ li {
 
 .q-total {
   float: left;
-  font-size: 30px;
+  font-size: 15px;
 }
 
 .score-total {
   float: right;
-  font-size: 30px;
+  font-size: 15px;
 }
 
 /* All other screens */

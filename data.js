@@ -7,7 +7,7 @@ let STORE = [
   },
   {
     question:
-      "Sometimes in Minecraft, we die. But at least we get experience. Which single action would render you the most?",
+      "Which single action in Minecraft would render you the most experience?",
     answers: [
       "Smashing a Bottle o’ Enchanting",
       "Mining a diamond ore block",

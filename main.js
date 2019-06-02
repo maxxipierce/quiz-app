@@ -1,94 +1,118 @@
 
 
 function genLandingPage() {
-  return `<div class="landing-page">
-<h2 class="text-el minecraft-font">How Much Do You Really <br>Know About Minecraft?</h2>
-<form class="continue-form">
-  <button type="submit" class="continue-button font-family: 'Notable', sans-serif;">START!</button>
-</form>
-</div>`
-}
-
-function genQuestionPage(index, score) {
-  return `<section class="container">
-  <header>
-    <h2 class="question minecraft-font ">${STORE[index].question}</h2>
-  </header>
-  <form class="answer-form">
-    <ul class="answer-options">
-      <li>
-        <label>
-          <input type="radio" value="0" name="answer" required> ${STORE[index].answers[0]}
-        </label>
-      </li>
-      <li>
-        <label>
-          <input type="radio" value="1" name="answer" required> ${STORE[index].answers[1]}
-        </label>
-      </li>
-      <li>
-        <label>
-          <input type="radio" value="2" name="answer" required> ${STORE[index].answers[2]}
-        </label>
-      </li>
-      <li>
-        <label>
-          <input type="radio" value="3" name="answer" required> ${STORE[index].answers[3]}
-        </label>
-      </li>
-    </ul>
-    <button type="submit" class="submit-button">Submit</button>
-  </form>
-</section>
-
-<footer>
-<div class="container">
-  <div class="footer-wrapper">
-    <div class="q-total bulky-font">
-      <p>Question: ${index + 1}/10</p>
-    </div>
-    <div class="score-total bulky-font">
-      <p>Score: ${score}</p>
-    </div>
-  </div>
-</div>
-</footer>
-</div>`;
-}
-
-function genIncorrectPage(actual) {
-  return `<div class="incorrect-page">
-      <form class="continue-form continue">
-        <div class="center">
-          <h3 class="in-correct-text minecraft-font">Incorrect!</h3>
-          <p class="correct-answer">The Correct Answer Is: ${actual}</p>
-          <button type="submit" class="continue-button">Continue</button>
-        </div>
-      </form>
+  return `
+    <div class="container">
+      <div class="container-inside">
+        <h2 class="subheader">How Much Do You Really <br>Know About Minecraft?</h2>
+        <form class="continue-form">
+          <button type="submit" class="continue-button">START!</button>
+        </form>
+      </div>
     </div>`
 }
 
-function genCorrectPage() {
-  return ` <div class="correct-page">
-  <form class="continue-form continue">
-    <div class="center">
-      <h3 class="in-correct-text minecraft-font">Correct!</h3>
-      <button type="submit" class="continue-button">Continue</button>
+function genQuestionPage(index, score) {
+  return `
+  <section class="question-page">
+    <div class="container">
+      <div class="container-inside">
+        <header>
+          <h2 class="question">${STORE[index].question}</h2>
+          <hr>
+        </header>
+
+        <form class="answer-form">
+          <div class="answer-container">
+            <ul class="answer-options">
+              <li>
+                <label>
+                  <input type="radio" value="0" name="answer" required> ${STORE[index].answers[0]}
+                </label>
+              </li>
+              <li>
+                <label>
+                  <input type="radio" value="1" name="answer" required> ${STORE[index].answers[1]}
+                </label>
+              </li>
+              <li>
+                <label>
+                  <input type="radio" value="2" name="answer" required> ${STORE[index].answers[2]}
+                </label>
+              </li>
+              <li>
+                <label>
+                  <input type="radio" value="3" name="answer" required> ${STORE[index].answers[3]}
+                </label>
+              </li>
+            </ul>
+          </div>
+          <button type="submit" class="submit-button">Submit</button>
+        </form>
+
+
+        <footer>
+          <div class="footer-wrapper">
+            <div class="q-total bulky-font">
+              <p>Question: ${index + 1}/10</p>
+            </div>
+            <div class="score-total bulky-font">
+              <p>Score: ${score}</p>
+            </div>
+          </div>
+        </footer>
+      </div>
     </div>
-  </form>
-</div>`
+  </section>`;
 }
 
-function genCompletePage(score) {
-  return `<div class="complete-page">
-  <form class="continue-form">
-    <div class="center">
-      <h3 class="score-complete">Score: ${score}/10</h3>
-      <button type="submit" class="continue-button">Try Again?</button>
+function genIncorrectPage(index, actual, score) {
+  return `
+  <section class="incorrect-page">
+    <div class="container">
+      <div class="container-inside">
+        <form class="continue-form">
+          <h3 class="incorrect-text">Incorrect!</h3>
+          <hr>
+          <p class="correct-answer">The Correct Answer Is: ${actual}</p>
+          <button type="submit" class="continue-button push">Continue</button>
+        </form>
+        <footer>
+        <div class="footer-wrapper">
+          <div class="q-total bulky-font">
+            <p>Question: ${index + 1}/10</p>
+          </div>
+          <div class="score-total bulky-font">
+            <p>Score: ${score}</p>
+          </div>
+        </div>
+      </footer>
+      </div>
     </div>
-  </form>
-</div>
-</div>`
+
+  </section>`
+}
+
+// function genCorrectPage() {
+//   return `
+//   <div class="correct-page">
+//     <form class="continue-form continue">
+//       <div class="center">
+//         <h3 class="in-correct-text">Correct!</h3>
+//         <button type="submit" class="continue-button">Continue</button>
+//       </div>
+//     </form>
+//   </div>`
+// }
+
+function genCompletePage(score) {
+  return `
+  <div class="complete-page">
+    <form class="continue-form">
+        <h3 class="score-complete">Score: ${score}/10</h3>
+        <button type="submit" class="continue-button">Try Again?</button>
+    </form>
+  </div>`
 }
 
 function render(html) {
@@ -124,7 +148,7 @@ function renderQuestionPage(index, score) {
 }
 
 function renderIncorrectPage(index, actual, score) {
-  let html = $(genIncorrectPage(actual))
+  let html = $(genIncorrectPage(index, actual, score))
   html.find(".continue-form").on("submit", function (event) {
     event.preventDefault();
     renderQuestionPage(index, score);

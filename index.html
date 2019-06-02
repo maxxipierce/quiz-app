@@ -8,14 +8,15 @@
 
   <title>Minecraft Quiz App</title>
   <link href="main.css" rel="stylesheet" type="text/css" />
-  <link href="https://fonts.googleapis.com/css?family=Notable|Press+Start+2P&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Notable|Press+Start+2P|Roboto+Condensed|Oswald&display=swap"
+    rel="stylesheet">
 </head>
 
 <body>
   <!-- Banner -->
   <header role="banner">
     <div class="banner">
-      <div class="container">
+      <div class="banner-container">
         <img src="img/creeper2.jpeg" class="logo" alt="minecraft block logo" />
         <h1 class="title">Minecraft Quiz</h1>
       </div>
@@ -23,97 +24,6 @@
   </header>
 
   <div id="render-target"></div>
-
-  <div class="hide-view">
-    <!-- Landing Page -->
-    <div class="landing-page">
-      <h2 class="text-el">How Much Do You Really <br>Know About Minecraft?</h2>
-      <form class="continue-form">
-        <button type="submit" class="continue-button">START!</button>
-      </form>
-    </div>
-
-    <!-- Question Page -->
-    <div class="question-page">
-      <main>
-        <section class="container">
-          <header>
-            <h2 class="question">Question #1</h2>
-          </header>
-          <form class="answer-form">
-            <ul class="answer-options">
-              <li>
-                <label>
-                  <input type="radio" value="0" name="answer" required> Answer 0
-                </label>
-              </li>
-              <li>
-                <label>
-                  <input type="radio" value="1" name="answer" required> Answer 1
-                </label>
-              </li>
-              <li>
-                <label>
-                  <input type="radio" value="2" name="answer" required> Answer 2
-                </label>
-              </li>
-              <li>
-                <label>
-                  <input type="radio" value="3" name="answer" required> Answer 3
-                </label>
-              </li>
-            </ul>
-            <button type="submit" class="submit-button">Submit</button>
-          </form>
-        </section>
-      </main>
-
-      <footer>
-        <div class="container">
-          <div class="footer-wrapper">
-            <div class="q-total">
-              <p>Question: <span class="q-number">1</span>/10</p>
-            </div>
-            <div class="score-total">
-              <p>Score: <span class="score-number">0</span>/10</p>
-            </div>
-          </div>
-        </div>
-      </footer>
-    </div>
-
-    <!-- Correct Page -->
-    <div class="correct-page">
-      <form class="continue-form continue">
-        <div class="center">
-          <h3 class="in-correct-text">Correct!</h3>
-          <button type="submit" class="continue-button">Continue</button>
-        </div>
-      </form>
-    </div>
-
-    <!-- Incorrect Page -->
-    <div class="incorrect-page">
-      <form class="continue-form continue">
-        <div class="center">
-          <h3 class="in-correct-text">Incorrect!</h3>
-          <p class="correct-answer"></p>
-          <button type="submit" class="continue-button">Continue</button>
-        </div>
-      </form>
-    </div>
-
-    <!-- Quiz Complete Page -->
-    <div class="complete-page">
-      <form class="continue-form">
-        <div class="center">
-          <h3 class="score-complete">Score: <span class="score-number">0</span>/10</h3>
-          <button type="submit" class="continue-button">Try Again?</button>
-        </div>
-      </form>
-    </div>
-  </div>
-
 
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
   <script src="data.js"></script>

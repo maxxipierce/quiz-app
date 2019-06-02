@@ -3,7 +3,12 @@ body {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: "Press Start 2P", cursive;
+
+}
+
+body {
+  background-image: url("img/minecraft-background.png");
+  font-family: 'Roboto Condensed', sans-serif;
 }
 
 .hide-view {
@@ -11,57 +16,59 @@ body {
 }
 
 /* Landing Page */
-.continue-form {
-  display: flex;
-  margin-top: 100px;
-  justify-content: center;
-}
-
-.center {
-  margin: 0 auto;
+.subheader {
   text-align: center;
+  padding-top: 200px;
+  font-family: "Press Start 2P", cursive;
 }
 
 .continue-button {
+  display: block;
+  margin: 250px auto 0;
   padding: 30px;
   font-size: 20px;
   border-radius: 2px;
-}
-
-.text-el {
-  text-align: center;
-  padding-top: 25px;
-}
-
-/* Correct Page */
-.in-correct-text,
-.score-complete {
-  display: block;
-  padding: 0 30px 30px;
+  font-family: "Press Start 2P", cursive;
 }
 
 /* Incorrect Page */
+.incorrect-text {
+  text-align: center;
+  padding: 100px 0 10px 0;
+  font-size: 40px;
+}
+
 .correct-answer {
-  padding: 10px;
-  margin-bottom: 30px;
+  margin: 30px;
+  text-align: center;
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.push {
+  margin-top: 275px;
+}
+
+/* Complete Page */
+.score-complete {
+  text-align: center;
+  color: white;
+  font-size: 50px;
+  margin-top: 100px;
 }
 
 /* Content Page */
-li {
-  list-style: none;
-}
-
 /* Cellphone screens */
 .banner {
-  background: rgb(242, 242, 242);
-  background: linear-gradient(
-    0deg,
-    rgba(242, 242, 242, 1) 0%,
-    rgba(117, 121, 121, 0.34217436974789917) 100%
-  );
-  /* background-color: #dcdddc; */
+  background: rgb(242,242,242);
+  background: linear-gradient(0deg, rgba(242,242,242,0.8) 0%, rgba(242,242,242,0.8) 100%);
   height: 200px;
   margin: 0;
+}
+
+.banner-container {
+  margin: 0 auto;
+
 }
 
 .banner .logo {
@@ -76,45 +83,62 @@ li {
   text-align: center;
   font-size: 40px;
   padding-top: 10px;
+  font-family: "Press Start 2P", cursive;
 }
 
 /* Question + Answers */
-.container .question {
+
+.container {
+  display: block;
+  height: 100vh;
+  background: rgb(242, 242, 242);
+  background: linear-gradient(
+    0deg,
+    rgba(242, 242, 242, 0.40379901960784315) 0%,
+    rgba(242, 242, 242, 0.4) 100%
+  );
+}
+
+.question {
+  font-size: 35px;
+  padding: 100px 0 10px 0;
+  text-align: center;
+}
+
+.answer-options {
+  margin: 20px 0;
+  text-align: center;
+  font-weight: 600;
   font-size: 25px;
 }
 
-.question,
-.answer-options {
-  text-align: center;
-  padding: 20px;
-}
-
-.answer-form {
-  height: 400px;
-  padding-top: 50px;
-}
-
-.answer-form,
-.answer-options {
-  font-size: 30px;
+li {
+  list-style: none;
+  padding: 10px;
 }
 
 .answer-form .submit-button {
   display: block;
-  margin: 50px auto;
+  margin: 80px auto;
   padding: 30px;
-
   font-size: 20px;
   border-radius: 2px;
+  font-family: "Press Start 2P", cursive;
 }
 
 /* Footer */
 .footer-wrapper {
-  background-color: #f2f2f2;
+  background: rgb(242, 242, 242);
+  background: linear-gradient(
+    0deg,
+    rgba(242, 242, 242, 0.40379901960784315) 0%,
+    rgba(242, 242, 242, 0.4) 100%
+  );
   padding: 20px;
   position: fixed;
   bottom: 0px;
-  width: 800px;
+  width: 100%;
+  border-radius: 4px;
 }
 
 .footer-wrapper::after {
@@ -122,15 +146,18 @@ li {
   content: "";
   display: table;
 }
+.q-total,
+.score-total {
+font-size: 15px;
+font-family: "Press Start 2P", cursive;
+}
 
 .q-total {
   float: left;
-  font-size: 15px;
 }
 
 .score-total {
   float: right;
-  font-size: 15px;
 }
 
 /* All other screens */
@@ -141,7 +168,7 @@ li {
     padding-top: 15px;
   }
 
-  .container {
+  .banner-container {
     width: 800px;
     margin: 0 auto;
   }
@@ -149,4 +176,15 @@ li {
   .banner .logo {
     float: left;
   }
+
+  .container-inside {
+    width: 800px;
+    margin: 0 auto;
+  }
+
+  .footer-wrapper {
+    width: 800px;
+  }
 }
+
+

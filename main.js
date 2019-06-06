@@ -89,7 +89,6 @@ function genIncorrectPage(index, actual, score) {
       </footer>
       </div>
     </div>
-
   </section>`
 }
 
@@ -141,7 +140,7 @@ function renderQuestionPage(index, score) {
     if (STORE[index].correctAnswer === Number(userAnswer)) {
       renderQuestionPage(index + 1, score + 1);
     } else {
-      renderIncorrectPage(index + 1, STORE[index].answers[STORE[index].correctAnswer], score);
+      renderIncorrectPage(index, STORE[index].answers[STORE[index].correctAnswer], score);
     }
   })
   render(html);
@@ -151,19 +150,10 @@ function renderIncorrectPage(index, actual, score) {
   let html = $(genIncorrectPage(index, actual, score))
   html.find(".continue-form").on("submit", function (event) {
     event.preventDefault();
-    renderQuestionPage(index, score);
+    renderQuestionPage(index + 1, score);
   })
   render(html);
 }
-
-// function renderCorrectPage(index, score) {
-//   let html = $(genCorrectPage())
-//   html.find(".continue-form").on("submit", function (event) {
-//     event.preventDefault();
-//     renderQuestionPage(index, score);
-//   })
-//   render(html);
-// }
 
 function renderCompletePage(score) {
   let html = $(genCompletePage(score))
